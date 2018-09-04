@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="./jquery.knob.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<!------ Include the above in your HEAD tag ---------->
+<body>
+<div class="container">
+	<div class="row">
+		<section>
+        <div class="wizard">
+            <div class="wizard-inner">
+                <div class="connecting-line"></div>
+                <ul class="nav nav-tabs" role="tablist">
+
+                    <li role="presentation" class="active">
+                        <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-user"></i>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li role="presentation" class="disabled">
+                        <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-lock"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="disabled">
+                        <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-bullhorn"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="disabled">
+                        <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab" title="Step 4">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-time"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="disabled">
+                        <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-ok"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <form role="form">
+                <div class="tab-content">
+                    <div class="tab-pane active" role="tabpanel" id="step1">
+                        <h3>Identification</h3>
+                        <div class="container">
+                          <div class="row" >
+                            <div class="col-sm-6">
+                              <div class="row">
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">A</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">B</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">C</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">D</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">E</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">F</button>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">G</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">H</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">I</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">J</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">K</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">L</button>
+                                </div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-sm-2">
+                                    <button type="button" class="btn btn-outline-primary">M</button>
+                                  </div>
+                                  <div class="col-sm-2">
+                                    <button type="button" class="btn btn-outline-primary">N</button>
+                                  </div>
+                                  <div class="col-sm-2">
+                                    <button type="button" class="btn btn-outline-primary">O</button>
+                                  </div>
+                                  <div class="col-sm-2">
+                                    <button type="button" class="btn btn-outline-primary">P</button>
+                                  </div>
+                                  <div class="col-sm-2">
+                                    <button type="button" class="btn btn-outline-primary">Q</button>
+                                  </div>
+                                  <div class="col-sm-2">
+                                    <button type="button" class="btn btn-outline-primary">R</button>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">S</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">T</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">U</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">V</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">W</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">X</button>
+                                </div>
+                              </div>
+                              <div class="row">
+                              <div class="col-sm-2">
+                                <button type="button" class="btn btn-outline-primary">Y</button>
+                              </div>
+                              <div class="col-sm-2">
+                                <button type="button" class="btn btn-outline-primary">Z</button>
+                              </div>
+                              <div class="col-sm-2">
+                                <button type="button" class="btn btn-outline-primary">DEL</button>
+                              </div>
+                            </div>
+                          </div>
+                            <div class="col-sm-6">
+                              <div class="row">
+                                <span class="border border-danger">
+                                  <img src="./img/profile.png" alt="..." class="img-thumbnail" style="width:50px">
+                                  Jean-jaque Henry
+                                </span>
+                              </div>
+                              <div class="row" style="background-color:green">
+                                <span class="border border-danger">
+                                  <img src="./img/profile.png" alt="..." class="img-thumbnail" style="width:50px">
+                                  Jean-jaque Henry
+                                </span>
+                              </div>
+                              <div class="row">
+                                <span class="border border-danger">
+                                  <img src="./img/profile.png" alt="..." class="img-thumbnail" style="width:50px">
+                                  Jean-jaque Henry
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-primary next-step">continuer</button></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="step2">
+                        <h3>Password</h3>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <button type="button" class="btn btn-outline-primary">7</button>
+                          </div>
+                          <div class="col-sm-4">
+                            <button type="button" class="btn btn-outline-primary">8</button>
+                          </div>
+                          <div class="col-sm-4">
+                            <button type="button" class="btn btn-outline-primary">9</button>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <button type="button" class="btn btn-outline-primary">4</button>
+                          </div>
+                          <div class="col-sm-4">
+                            <button type="button" class="btn btn-outline-primary">5</button>
+                          </div>
+                          <div class="col-sm-4">
+                            <button type="button" class="btn btn-outline-primary">6</button>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <button type="button" class="btn btn-outline-primary">1</button>
+                          </div>
+                          <div class="col-sm-4">
+                            <button type="button" class="btn btn-outline-primary">2</button>
+                          </div>
+                          <div class="col-sm-4">
+                            <button type="button" class="btn btn-outline-primary">3</button>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <button type="button" class="btn btn-outline-primary">Erase</button>
+                          </div>
+                          <div class="col-sm-4">
+                            <button type="button" class="btn btn-outline-primary">0</button>
+                          </div>
+                          <div class="col-sm-4">
+                            <button type="button" class="btn btn-outline-primary">DEL</button>
+                          </div>
+                        </div>
+                        <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-danger ">annuler</button></li>
+                            <li><button type="button" class="btn btn-default prev-step">retour</button></li>
+                            <li><button type="button" class="btn btn-primary next-step">continuer</button></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="step3">
+                        <h3>Invitation</h3>
+                        <div class="container">
+                          <div class="row" >
+                            <div class="col-sm-6">
+                              <div class="row">
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">A</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">B</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">C</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">D</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">E</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">F</button>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">G</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">H</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">I</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">J</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">K</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">L</button>
+                                </div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-sm-2">
+                                    <button type="button" class="btn btn-outline-primary">M</button>
+                                  </div>
+                                  <div class="col-sm-2">
+                                    <button type="button" class="btn btn-outline-primary">N</button>
+                                  </div>
+                                  <div class="col-sm-2">
+                                    <button type="button" class="btn btn-outline-primary">O</button>
+                                  </div>
+                                  <div class="col-sm-2">
+                                    <button type="button" class="btn btn-outline-primary">P</button>
+                                  </div>
+                                  <div class="col-sm-2">
+                                    <button type="button" class="btn btn-outline-primary">Q</button>
+                                  </div>
+                                  <div class="col-sm-2">
+                                    <button type="button" class="btn btn-outline-primary">R</button>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">S</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">T</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">U</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">V</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">W</button>
+                                </div>
+                                <div class="col-sm-2">
+                                  <button type="button" class="btn btn-outline-primary">X</button>
+                                </div>
+                              </div>
+                              <div class="row">
+                              <div class="col-sm-2">
+                                <button type="button" class="btn btn-outline-primary">Y</button>
+                              </div>
+                              <div class="col-sm-2">
+                                <button type="button" class="btn btn-outline-primary">Z</button>
+                              </div>
+                              <div class="col-sm-2">
+                                <button type="button" class="btn btn-outline-primary">DEL</button>
+                              </div>
+                            </div>
+                          </div>
+                            <div class="col-sm-6">
+                              <div class="row">
+                                <span class="border border-danger">
+                                  <img src="./img/profile.png" alt="..." class="img-thumbnail" style="width:50px">
+                                  Jean-jaque Henry
+                                </span>
+                              </div>
+                              <div class="row">
+                                <span class="border border-danger">
+                                  <img src="./img/group.jpg" alt="..." class="img-thumbnail" style="width:50px">
+                                  Groupe Java POEI
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-danger ">annuler</button></li>
+                            <li><button type="button" class="btn btn-default prev-step">Retour</button></li>
+                            <li><button type="button" class="btn btn-primary btn-info-full next-step">Continuer</button></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="step4">
+                        <h3>Temps</h3>
+                        <input type="text" data-min="0" value="0" class="dial"> Heures
+                        <input type="text" data-min="0" value="25" data-step="5" data-max="60" class="dial"> Minutes
+                        <br>
+                        version alternative
+                        <img src="./img/time.PNG">
+                        <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-danger ">annuler</button></li>
+                            <li><button type="button" class="btn btn-default prev-step">Retour</button></li>
+                            <li><button type="button" class="btn btn-primary btn-info-full next-step">Continuer</button></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="complete">
+                        <h3>Résumer</h3>
+                        Vous allez reserver une réunion de XXh et YYminutes en invitant I,J,K et L.
+                        <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-danger ">annuler</button></li>
+                            <li><button type="button" class="btn btn-default prev-step">Retour</button></li>
+                            <li><button type="button" class="btn btn-primary btn-info-full next-step">Valider</button></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </form>
+        </div>
+    </section>
+   </div>
+</div>
+</body>
+
+<script>
+$(document).ready(function () {
+    //Initialize tooltips
+    $('.nav-tabs > li a[title]').tooltip();
+
+    //Wizard
+    $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+
+        var $target = $(e.target);
+
+        if ($target.parent().hasClass('disabled')) {
+            return false;
+        }
+    });
+
+    $(".next-step").click(function (e) {
+
+        var $active = $('.wizard .nav-tabs li.active');
+        $active.next().removeClass('disabled');
+        nextTab($active);
+
+    });
+    $(".prev-step").click(function (e) {
+
+        var $active = $('.wizard .nav-tabs li.active');
+        prevTab($active);
+
+    });
+});
+
+function nextTab(elem) {
+    $(elem).next().find('a[data-toggle="tab"]').click();
+}
+function prevTab(elem) {
+    $(elem).prev().find('a[data-toggle="tab"]').click();
+}
+</script>
+<script>
+    $(function() {
+        $(".dial").knob();
+    });
+</script>
+</html>
