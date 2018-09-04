@@ -1,0 +1,54 @@
+<h2>Liste Localisations</h2>
+<div class="row">
+  <div class="col-lg-12">
+        <div class="box">
+            <div id="collapse4" class="body">
+                <table id="dataTable" class="table table-bordered table-condensed table-hover table-striped">
+                    <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nom </th>
+                        <th>Adresse</th>
+                        <th><em class="glyphicon glyphicon-cog"></em></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                            <tr *ngFor="let place of places">
+                                <td>{{place.id}}</td>
+                                <td>{{place.name}}</td>
+                                <td>{{place.adresse}}</td>
+                                <td><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" data-placement="top" rel="tooltip"    ><span class="glyphicon glyphicon-pencil"></span></button>
+             <button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" data-placement="top" rel="tooltip"><span class="glyphicon glyphicon-trash"></span></button>
+</td>
+                            </tr>               
+                    </tbody>            
+                </table>
+            </div>
+            </div>
+        </div>
+</div>
+
+<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+    <div class="modal-dialog">
+  <div class="modal-content">
+        <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <h4 class="modal-title custom_align" id="Heading">Modifier une localisation</h4>
+    </div>
+        <div class="modal-body">
+        <div class="form-group">
+      <input class="form-control " type="text" placeholder="nouveau nom">
+      </div>
+      <div class="form-group">
+      <input class="form-control " type="text" placeholder="nouvelle adresse">
+      </div>
+     
+    </div>
+        <div class="modal-footer ">
+      <button type="button" class="btn btn-warning btn-lg" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span>Valider</button>
+    </div>
+      </div>
+  <!-- /.modal-content -->
+</div>
+    <!-- /.modal-dialog -->
+  </div>
